@@ -8,7 +8,7 @@ var chatty = (function(chatty) {
 			HTML += `<span>${messages[i].message}</span><button id="${messages[i]}.msgid" class="buttons">Delete</button></div>`
 		};
 		messageDestination.innerHTML = HTML;
-	}
+	};
 
 	chatty.setPrivateArray = function(userInput) {
 		var newUserInputObject = {
@@ -16,6 +16,13 @@ var chatty = (function(chatty) {
 			"message": userInput
 		}
 		messages.push(newUserInputObject);
+	};
+
+	chatty.setJSONInArray = function(JSONData) {
+		for (var i = 0; i < JSONData.length; i++) {
+			messages.push(JSONData[i]);
+			chatty.setMessageInDOM(messages, messageBoard);
+		};
 	};
 
 	chatty.getPrivateArray = function() {
