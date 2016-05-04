@@ -4,10 +4,14 @@
 
 //Listens for delete button to be pressed inside mainBody container
 //and gives the ID
-var mainBody = document.getElementById("mainBody");
-
-mainBody.addEventListener("click", function(){
+var messageBoard = document.getElementById("messageBoard");
+messageBoard.addEventListener("click", function(){
   chatty.deleteDomElement(event.target, event.target.id);
+});
+
+var clearAll = document.getElementById("clearAll");
+clearAll.addEventListener("click", function(){
+  chatty.deleteAll(event.target.id);
 });
 
 var toDarkCheckbox = document.getElementById("toDark");
@@ -37,7 +41,7 @@ userInput.addEventListener("keyup", function(e) {
 
 function checkMessage () {
 	if (messageBoard.InnerHTML === "") {
-		document.getElementsById("clearAll").setAttribute("disabled", true);
+		document.getElementById("clearAll").setAttribute("disabled", true);
 	}
 }
 
