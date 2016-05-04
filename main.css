@@ -1,0 +1,64 @@
+/*-------------------------
+
+GLOBAL STYLES
+
+-------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*-------------------------
+
+LAYOUT STYLES
+
+-------------------------*/
+
+#mainNav {
+	/*border: solid 1px red;*/
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	width: 100%;
+	background-color: slategrey;
+	border-bottom: solid 1px black;
+}
+
+#itemTwo {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#bottomRow {
+	/*border: solid 1px yellow;*/
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+#bottomRow p {
+	margin: 5px 20px 20px 5px;
+}
+
+#mainLogo {
+	margin: 20px 50px;
+}
+
+#mainBody {
+	/*border: dotted 1px black;*/
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 100px;
+	min-height: 1000px;
+}
+
+#messageHeadline {
+	margin-top: 10px;
+}
