@@ -1,19 +1,17 @@
-var chatty = (function(){
+var chatty = (function(chatty){
 
-  function deleteDomElement (DOMelement) {
-    DOMelement.parentNode.removeChild(DOMelement);
-  }
+  //Deletes target id
+  chatty.deleteDomElement = function(DOMelement) {
+    return DOMelement.parentNode.removeChild(DOMelement);
+  };
 
-  return{
-    getDeleteDomElement = (function() {
-      return deleteDomElement();
-    }
-  }
+  return thing;
 
 })(chatty || {});
 
 
 
 
-// new method deleteDomElement that is called by iife 2 to delete element from DOM.
-// This method deleted from dom.
+
+// new method deleteArrayObject that is called by iife 2 to remove
+// corresponding object from the private array messages.
