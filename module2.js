@@ -5,7 +5,7 @@ var chatty = (function(chatty) {
 		var HTML = "";
 		for (var i = 0; i < messages.length; i++) {
 			HTML += `<div id="msg-${messages[i].msgid}" class="messages">`;
-			HTML += `<span>${messages[i].message}</span><button id="${messages[i]}.msgid" class="buttons">Delete</button></div>`
+			HTML += `<span>${messages[i].message}</span><button id="${messages[i].msgid}" class="buttons">Delete</button></div>`
 		};
 		messageDestination.innerHTML = HTML;
 	}

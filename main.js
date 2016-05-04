@@ -7,7 +7,7 @@
 var mainBody = document.getElementById("mainBody");
 
 mainBody.addEventListener("click", function(){
-  chatty.deleteDomElement(event.target.id);
+  chatty.deleteDomElement(event.target, event.target.id);
 });
 
 var toDarkCheckbox = document.getElementById("toDark");
