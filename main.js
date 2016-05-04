@@ -37,7 +37,7 @@ userInput.addEventListener("keyup", function(e) {
 
 function checkMessage () {
 	if (messageBoard.InnerHTML === "") {
-		document.getElementsById("clearAll").setAttribute("disabled", true);
+		document.getElementById("clearAll").setAttribute("disabled", true);
 	}
 }
 
