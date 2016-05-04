@@ -11,8 +11,12 @@ mainBody.addEventListener("click", function(){
 
 var toDarkCheckbox = document.getElementById("toDark");
 toDarkCheckbox.addEventListener("click", function() {
-	var body = document.getElementById("mainBody");
-	// console.log("body:", body);
+	var body = document.getElementById("body");
 	body.classList.toggle("dark");
 });
 
+var toLargeCheckbox = document.getElementById("toLarge");
+toLargeCheckbox.addEventListener("click", function() {
+	var body = document.getElementById("body");
+	body.classList.toggle("large");
+});
