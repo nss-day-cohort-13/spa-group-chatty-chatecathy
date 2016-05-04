@@ -20,3 +20,13 @@ toLargeCheckbox.addEventListener("click", function() {
 	var body = document.getElementById("body");
 	body.classList.toggle("large");
 });
+
+var userInput = document.getElementById("userMessageTextArea");
+userInput.addEventListener("keyup", function(e) {
+	if (e.keyCode === 13) {
+		function() {
+			chatty.setPrivateArray(userInput.value);
+		};
+	}
+});
+
