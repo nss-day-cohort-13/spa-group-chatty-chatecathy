@@ -9,3 +9,10 @@ mainBody.addEventListener("click", function(){
   chatty.setDeleteIndividualMessage(event.target.id);
 });
 
+var toDarkCheckbox = document.getElementById("toDark");
+toDarkCheckbox.addEventListener("click", function() {
+	var body = document.getElementById("mainBody");
+	// console.log("body:", body);
+	body.classList.toggle("dark");
+});
+

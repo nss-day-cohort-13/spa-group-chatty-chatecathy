@@ -62,3 +62,19 @@ LAYOUT STYLES
 #messageHeadline {
 	margin-top: 10px;
 }
+
+/*-------------------------
+
+NAV CHECKBOX CLASSES
+
+-------------------------*/
+
+.dark {
+	background-color: darkgrey;
+	color: white;
+}
+
+.large {
+	font-size: 1.5em;
+}
+
