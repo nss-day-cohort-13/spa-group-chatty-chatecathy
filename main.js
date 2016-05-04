@@ -9,3 +9,22 @@ mainBody.addEventListener("click", function(){
   chatty.setDeleteIndividualMessage(event.target.id);
 });
 
+var toDarkCheckbox = document.getElementById("toDark");
+toDarkCheckbox.addEventListener("click", function() {
+	var body = document.getElementById("body");
+	body.classList.toggle("dark");
+});
+
+var toLargeCheckbox = document.getElementById("toLarge");
+toLargeCheckbox.addEventListener("click", function() {
+	var body = document.getElementById("body");
+	body.classList.toggle("large");
+});
+
+var userInput = document.getElementById("userMessageTextArea");
+userInput.addEventListener("keyup", function(e) {
+	if (e.keyCode === 13) {
+		chatty.setPrivateArray(userInput.value);
+	}
+});
+
