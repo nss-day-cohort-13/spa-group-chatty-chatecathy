@@ -22,9 +22,12 @@ toLargeCheckbox.addEventListener("click", function() {
 });
 
 var userInput = document.getElementById("userMessageTextArea");
+var messageBoard = document.getElementById("messageBoard");
 userInput.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13) {
 		chatty.setPrivateArray(userInput.value);
+		chatty.setMessageInDOM(userInput.value, messageBoard);
+		userInput.value = "";
 	}
 });
 
