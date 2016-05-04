@@ -3,7 +3,7 @@ var chatty = (function (chatty){
 
 	function executeThisCodeAfterFileIsLoaded () {
 	   jsonData = JSON.parse(this.responseText);
-	   console.log(jsonData);
+	   chatty.setJSONInArray(jsonData.messages);
 	}
 
 	function executeThisIfError () {
