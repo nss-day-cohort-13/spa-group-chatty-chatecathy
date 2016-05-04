@@ -32,3 +32,12 @@ userInput.addEventListener("keyup", function(e) {
 	}
 });
 
+// ********************
+// DISABLING CLEAR BUTTON
+
+function checkMessage () {
+	if (messageBoard.InnerHTML === "") {
+		document.getElementsById("clearAll").setAttribute("disabled", true);
+	}
+}
+
