@@ -6,6 +6,9 @@ var chatty = (function(chatty){
     deleteFromPrivateArray(targetId);
     checkMessage();
   };
+  chatty.deleteAll = function(clearAllId){
+    messageBoard.innerHTML = " ";
+  };
 
   return chatty;
 
