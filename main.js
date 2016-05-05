@@ -38,6 +38,7 @@ toLargeCheckbox.addEventListener("click", function() {
 var userInput = document.getElementById("userMessageTextArea");
 userInput.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13) {
+		// if the user tries to enter an empty string, throw an alert that asks for a message. if not, continue running the program
 		if (userInput.value === "") {
 			alert("Please enter a message!");
 		} else {
