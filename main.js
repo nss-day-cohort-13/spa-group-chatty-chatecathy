@@ -27,7 +27,6 @@ toLargeCheckbox.addEventListener("click", function() {
 });
 
 var userInput = document.getElementById("userMessageTextArea");
-var messageBoard = document.getElementById("messageBoard");
 userInput.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13) {
 		chatty.setPrivateArray(userInput.value);
@@ -40,7 +39,8 @@ userInput.addEventListener("keyup", function(e) {
 // DISABLING CLEAR BUTTON
 
 function checkMessage () {
-	if (messageBoard.InnerHTML === "") {
+	if (messageBoard.innerHTML === "") {
+    console.log("Hello People this works");
 		document.getElementById("clearAll").setAttribute("disabled", true);
 	}
 }
