@@ -12,6 +12,7 @@ messageBoard.addEventListener("click", function(){
 var clearAll = document.getElementById("clearAll");
 clearAll.addEventListener("click", function(){
   chatty.deleteAll(event.target.id);
+  chatty.deleteAllFromPrivateArray();
 });
 
 var toDarkCheckbox = document.getElementById("toDark");

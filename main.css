@@ -1,3 +1,7 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
 /*-------------------------
 
 GLOBAL STYLES
@@ -11,6 +15,9 @@ GLOBAL STYLES
 body {
 	margin: 0;
 	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
 }
 
 /*-------------------------
@@ -32,8 +39,18 @@ LAYOUT STYLES
 #itemTwo {
 	display: flex;
 	flex-direction: column;
-	margin-right: auto;
+	width: 100%;
 	margin-top: 20px;
+}
+
+#userMessageTextArea {
+  display: inline-block;
+  margin-right: 0;
+  width: 50%;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
 }
 
 #bottomRow {
@@ -49,13 +66,14 @@ LAYOUT STYLES
 
 #mainLogo {
 	margin: 20px 50px;
+	font-family: cursive;
 }
 
 #mainBody {
 	/*border: dotted 1px black;*/
 	width: 80%;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 120px;
 	min-height: 1000px;
 }
 
@@ -76,5 +94,51 @@ NAV CHECKBOX CLASSES
 
 .large {
 	font-size: 1.5em;
+}
+
+/*-------------------------
+
+MESSAGE BOARD STYLINGS
+
+-------------------------*/
+
+#messageBoard {
+	border: 1px solid rgba(125, 125, 125, .5);
+	box-shadow: 0 0 5px 1px black;
+	min-height: 150px;
+}
+
+.messages {
+	margin: 5px 10px;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+}
+
+.messages span {
+	margin-right: auto;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.buttons {
+	margin-left: 10px;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, .8);
+	border-radius: 5px;
+}
+
+#clearAll {
+	font-size: 15px;
+}
+
+/*-------------------------
+
+VISUAL STYLINGS
+
+-------------------------*/
+
+#userMessageTextArea {
+  display: inline-block;
+  width: 50%;
 }
 
