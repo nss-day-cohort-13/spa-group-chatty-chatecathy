@@ -12,6 +12,7 @@ messageBoard.addEventListener("click", function(){
 var clearAll = document.getElementById("clearAll");
 clearAll.addEventListener("click", function(){
   chatty.deleteAll(event.target.id);
+  clearAll.disabled = true;
 });
 
 var toDarkCheckbox = document.getElementById("toDark");
@@ -29,6 +30,7 @@ toLargeCheckbox.addEventListener("click", function() {
 var userInput = document.getElementById("userMessageTextArea");
 userInput.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13) {
+    enableClearAll();
 		chatty.setPrivateArray(userInput.value);
 		chatty.setMessageInDOM(userInput.value, messageBoard);
 		userInput.value = "";
@@ -40,8 +42,10 @@ userInput.addEventListener("keyup", function(e) {
 
 function checkMessage () {
 	if (messageBoard.innerHTML === "") {
-    console.log("Hello People this works");
 		document.getElementById("clearAll").setAttribute("disabled", true);
 	}
 }
 
+function enableClearAll () {
+  clearAll.disabled = false;
+}
