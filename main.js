@@ -38,15 +38,20 @@ toLargeCheckbox.addEventListener("click", function() {
 var userInput = document.getElementById("userMessageTextArea");
 userInput.addEventListener("keyup", function(e) {
 	if (e.keyCode === 13) {
-    //calls from main.js to enable "clear message board" button.
-    enableClearAll();
-    //passes value from textbox to setPrivateArray in module 2
-		chatty.setPrivateArray(userInput.value);
-    //Passing value of message board in order for setMessageInDom
-    //to know where to insert information in the DOM
-		chatty.setMessageInDOM(userInput.value, messageBoard);
-    //Sets textbox to blank after user hits enter.
-		userInput.value = "";
+		// if the user tries to enter an empty string, throw an alert that asks for a message. if not, continue running the program
+		if (userInput.value === "") {
+			alert("Please enter a message!");
+		} else {
+	    //calls from main.js to enable "clear message board" button.
+	    enableClearAll();
+	    //passes value from textbox to setPrivateArray in module 2
+			chatty.setPrivateArray(userInput.value);
+	    //Passing value of message board in order for setMessageInDom
+	    //to know where to insert information in the DOM
+			chatty.setMessageInDOM(userInput.value, messageBoard);
+	    //Sets textbox to blank after user hits enter.
+			userInput.value = "";
+		};
 	}
 });
 
