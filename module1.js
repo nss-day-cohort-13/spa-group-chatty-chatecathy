@@ -1,4 +1,5 @@
 var chatty = (function (chatty){
+	//This iife uses an XML request to retrieve information from messages.json
 	var jsonData =[];
 
 	function executeThisCodeAfterFileIsLoaded () {
@@ -25,11 +26,6 @@ var chatty = (function (chatty){
 
 	// Tell the XHR object to start
 	myRequest.send();
-
-
-	chatty.getJsonData = function() {
-		return jsonData;
-	}
 
 	return chatty;
 
