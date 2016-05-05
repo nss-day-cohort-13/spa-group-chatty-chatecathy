@@ -29,6 +29,10 @@ var chatty = (function(chatty) {
 		messages.splice(messages[id - 1], 1);
 	};
 
+	chatty.deleteAllFromPrivateArray = function() {
+		messages.splice(0, messages.length);
+	}
+
 	chatty.getPrivateArray = function() {
 		return messages
 	};
