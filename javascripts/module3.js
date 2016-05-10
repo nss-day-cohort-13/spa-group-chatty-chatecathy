@@ -1,3 +1,6 @@
+"use-strict";
+
+
 var chatty = (function(chatty){
 
   //Deletes the child and parent of the event.target

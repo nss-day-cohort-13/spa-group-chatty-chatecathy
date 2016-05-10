@@ -1,3 +1,6 @@
+"use-strict";
+
+
 var chatty = (function(chatty) {
 	//This iife contains all methods corresponding with getting and setting
 	//information in the private array.
@@ -8,8 +11,8 @@ var chatty = (function(chatty) {
 		var HTML = "";
 		for (var i = 0; i < messages.length; i++) {
 			HTML += `<div id="msg-${messages[i].msgid}" class="messages">`;
-			HTML += `<span>${messages[i].message}</span><button id="${messages[i].msgid}" class="buttons">Delete</button></div>`
-		};
+			HTML += `<span>${messages[i].message}</span><button id="${messages[i].msgid}" class="buttons">Delete</button></div>`;
+		}
 		messageDestination.innerHTML = HTML;
 	};
 
@@ -18,7 +21,7 @@ var chatty = (function(chatty) {
 		var newUserInputObject = {
 			"msgid": (messages.length + 1),
 			"message": userInput
-		}
+		};
 		messages.push(newUserInputObject);
 	};
 
@@ -27,7 +30,7 @@ var chatty = (function(chatty) {
 		for (var i = 0; i < JSONData.length; i++) {
 			messages.push(JSONData[i]);
 			chatty.setMessageInDOM(messages, messageBoard);
-		};
+		}
 	};
 
 	//When delete button is pressed, this function deletes the corresponding
@@ -39,11 +42,11 @@ var chatty = (function(chatty) {
 	//Deletes all messages from the private array
 	chatty.deleteAllFromPrivateArray = function() {
 		messages.splice(0, messages.length);
-	}
+	};
 
 	//This makes the content of the private array available to view but not change
 	chatty.getPrivateArray = function() {
-		return messages
+		return messages;
 	};
 
 	return chatty;

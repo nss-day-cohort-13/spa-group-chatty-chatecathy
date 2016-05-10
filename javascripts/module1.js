@@ -1,3 +1,6 @@
+"use-strict";
+
+
 var chatty = (function (chatty){
 	//This iife uses an XML request to retrieve information from messages.json
 	var jsonData =[];

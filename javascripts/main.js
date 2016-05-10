@@ -1,13 +1,16 @@
+"use-strict";
 // ****************
 // Event Listeners
 // ****************
 
 //Listens for delete button to be pressed inside mainBody container
 //and passes the ID as the argument
-var messageBoard = document.getElementById("messageBoard");
-messageBoard.addEventListener("click", function(){
-  chatty.deleteDomElement(event.target, event.target.id);
-});
+// var messageBoard = document.getElementById("messageBoard");
+// messageBoard.addEventListener("click", function(){
+//   chatty.deleteDomElement(event.target, event.target.id);
+// });
+
+$("messageBoard").click(chatty.deleteDomElement(event.target, event.target.id));
 
 //Listens for "clear message board" button to be pressed.
 var clearAll = document.getElementById("clearAll");
@@ -51,7 +54,7 @@ userInput.addEventListener("keyup", function(e) {
 			chatty.setMessageInDOM(userInput.value, messageBoard);
 	    //Sets textbox to blank after user hits enter.
 			userInput.value = "";
-		};
+		}
 	}
 });
 
