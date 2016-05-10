@@ -13,7 +13,7 @@ var chatty = (function(chatty) {
 			HTML += `<div id="msg-${messages[i].msgid}" class="messages">`;
 			HTML += `<span>${messages[i].message}</span><button id="${messages[i].msgid}" class="buttons">Delete</button></div>`;
 		}
-		messageDestination.innerHTML = HTML;
+		messageDestination.html(HTML);
 	};
 
 	//Adds new message to the private array
