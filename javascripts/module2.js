@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 
 
 var chatty = (function(chatty) {
@@ -41,7 +41,7 @@ var chatty = (function(chatty) {
 
 	//Deletes all messages from the private array
 	chatty.deleteAllFromPrivateArray = function() {
-		messages.splice(0, messages.length);
+		messages = [];
 	};
 
 	//This makes the content of the private array available to view but not change

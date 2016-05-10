@@ -1,4 +1,4 @@
-"use-strict";
+"use strict";
 // ****************
 // Event Listeners
 // ****************
@@ -28,10 +28,10 @@ $(document).on("click", "#messageBoard", function (event) {
 // });
 
 //jQuery version of lines 19-27
-$(document).on("click", "#clearAll", function () {
+$("#clearAll").click(function () {
 	chatty.deleteAll(event.target.id);
 	chatty.deleteAllFromPrivateArray();
-	clearAll.disabled = true;
+	$("#clearAll").attr("disabled", true);
 });
 
 //Listens for Dark Theme checkbox. It will add or remove class of "dark".
@@ -109,11 +109,11 @@ $("#userMessageTextArea").keypress(function (e) {
 // jQuery version of lies 103 -107
 function checkMessage () {
 	if (messageBoard.html() === "") {
-		$("#clearAll").attr("disabled", true)
+		$("#clearAll").attr("disabled", true);
 	}
 }
 
 //Enables "Clear Message Board" button.
 function enableClearAll () {
-  clearAll.disabled = false;
+  $("#clearAll").attr("disabled", false);
 }
