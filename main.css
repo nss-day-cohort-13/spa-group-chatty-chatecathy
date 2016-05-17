@@ -1,0 +1,152 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+/*-------------------------
+
+GLOBAL STYLES
+
+-------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+/*-------------------------
+
+LAYOUT STYLES
+
+-------------------------*/
+
+#mainNav {
+	/*border: solid 1px red;*/
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	width: 100%;
+	background-color: slategrey;
+	border-bottom: solid 1px black;
+}
+
+#itemOne {
+	width: 10%;
+	margin: 1%;
+	margin-left: 1%;
+}
+
+#itemTwo {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 40px;
+}
+
+#userMessageTextArea {
+  display: inline-block;
+  margin-right: 0;
+  width: 50%;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+#bottomRow {
+	/*border: solid 1px yellow;*/
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+#bottomRow p {
+	margin: 5px 20px 20px 5px;
+}
+
+#mainBody {
+	/*border: dotted 1px black;*/
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 150px;
+	min-height: 1000px;
+}
+
+#messageHeadline {
+	margin-top: 10px;
+}
+
+#cathyImg {
+	width: 75%;
+	height: 75%;
+	border-radius: 25%;
+	border: 2px solid white;
+}
+
+/*-------------------------
+
+NAV CHECKBOX CLASSES
+
+-------------------------*/
+
+.dark {
+	background-color: darkgrey;
+	color: white;
+}
+
+.large {
+	font-size: 1.5em;
+}
+
+/*-------------------------
+
+MESSAGE BOARD STYLINGS
+
+-------------------------*/
+
+#messageBoard {
+	border: 1px solid rgba(125, 125, 125, .5);
+	box-shadow: 0 0 5px 1px black;
+	min-height: 150px;
+}
+
+.messages {
+	margin: 5px 10px;
+	display: flex;
+	flex-direction: row;
+	align-content: flex-end;
+}
+
+.messages span {
+	margin-right: auto;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+.buttons {
+	margin-left: 10px;
+	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, .8);
+	border-radius: 5px;
+}
+
+#clearAll {
+	font-size: 15px;
+}
+
+/*-------------------------
+
+VISUAL STYLINGS
+
+-------------------------*/
+
+#userMessageTextArea {
+  display: inline-block;
+  width: 50%;
+}
+

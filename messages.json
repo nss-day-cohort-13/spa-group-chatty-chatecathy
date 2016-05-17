@@ -1,0 +1,18 @@
+{
+	"messages": [{
+		"msgid": 1,
+		"message": "Hello, my names is Simon."
+	}, {
+		"msgid": 2,
+		"message": "I love trashcans, does anyone have any?"
+	}, {
+		"msgid": 3,
+		"message": "I eat."
+	}, {
+		"msgid": 4,
+		"message": "Mountains, where art thou?"
+	}, {
+		"msgid": 5,
+		"message": "IChat Uchat. We all chat with Cathy"
+	}]
+}
