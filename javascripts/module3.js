@@ -1,3 +1,6 @@
+"use strict";
+
+
 var chatty = (function(chatty){
 
   //Deletes the child and parent of the event.target
@@ -11,7 +14,7 @@ var chatty = (function(chatty){
 
   //Deletes the entire message board from the DOM
   chatty.deleteAll = function(clearAllId){
-    messageBoard.innerHTML = " ";
+    messageBoard.html("");
   };
 
   return chatty;

@@ -1,0 +1,13 @@
+{
+  "name": "spa-group-chatty-chatecathy",
+  "homepage": "https://github.com/josephkane/spa-group-chatty-chatecathy",
+  "authors": [
+    "Joseph Kane <josephckane@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
